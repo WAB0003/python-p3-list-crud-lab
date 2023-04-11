@@ -20,7 +20,7 @@ class TestListCrud:
 
     def test_adds_element_to_end_of_list(self):
         '''contains a function "add_element_to_end_of_list" that adds an element to the end of a list.'''
-        assert(type(add_element_to_end_of_list(create_a_list(), 5)) == list)
+        assert(type(add_element_to_end_of_list([create_a_list()], 5)) == list)
         assert(add_element_to_end_of_list([1, 2, 3, 4], 5)[-1] == 5)
 
     def test_adds_element_to_start_of_list(self):
